@@ -11,7 +11,7 @@ RUN sudo update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
 RUN cd /bundle/programs/server; npm install
 EXPOSE 8080
 ENV PORT 8080
-ENV ROOT_URL http://192.168.59.103
+#ENV ROOT_URL http://192.168.59.103
 ENV MONGO_URL mongodb://127.0.0.1:3001/meteor
 CMD ["nodejs", "/bundle/main.js"]
 
